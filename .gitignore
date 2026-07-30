@@ -1,0 +1,10 @@
+node_modules/
+dist/
+.env
+.workspace/
+.kiro/
+scratch/
+.idea/
+.DS_Store
+*.log
+uploads/

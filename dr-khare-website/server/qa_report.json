@@ -1,0 +1,43 @@
+{
+  "passing": [
+    {
+      "testName": "MongoDB Connection",
+      "details": "Successfully connected to local database."
+    },
+    {
+      "testName": "Admin Workflow",
+      "details": "Admin user exists and is queryable."
+    },
+    {
+      "testName": "Review Workflow - Submission",
+      "details": "Review successfully submitted and defaulted to pending."
+    },
+    {
+      "testName": "Review Workflow - Moderation",
+      "details": "Review status successfully updated to approved."
+    },
+    {
+      "testName": "Blog Workflow",
+      "details": "Blog successfully created and saved."
+    },
+    {
+      "testName": "Journey Workflow",
+      "details": "Milestone successfully created with memories array."
+    },
+    {
+      "testName": "Media Library",
+      "details": "Media record successfully saved to MongoDB."
+    },
+    {
+      "testName": "Newsletter Testing",
+      "details": "Subscriber successfully saved to database."
+    },
+    {
+      "testName": "Homepage Content Testing",
+      "details": "SiteContent config successfully retrieved/saved."
+    }
+  ],
+  "failing": [],
+  "knownIssues": [],
+  "blockers": []
+}
