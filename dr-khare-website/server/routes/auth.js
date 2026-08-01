@@ -29,7 +29,9 @@ router.post('/seed', async (req, res) => {
 router.post('/login', async (req, res) => {
   try {
     const { email, password } = req.body;
-    const user = await AdminUser.findOne({ email });
+    // Handle mobile auto-capitalization by standardizing to lowercase
+    const normalizedEmail = email ? email.toLowerCase() : '';
+    const user = await AdminUser.findOne({ email: normalizedEmail });
     if (!user) return res.status(400).json({ error: 'Invalid credentials' });
 
     const isMatch = await bcrypt.compare(password, user.passwordHash);
